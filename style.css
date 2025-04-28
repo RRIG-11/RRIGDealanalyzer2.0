@@ -1,0 +1,88 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+/* Form section */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+/* Deal result card */
+.deal-card {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    background-color: #f8fafc;
+}
+
+/* Deal Score colors */
+.good-deal {
+    background-color: #bbf7d0; /* Light green */
+}
+
+.okay-deal {
+    background-color: #fde68a; /* Light orange */
+}
+
+.bad-deal {
+    background-color: #fecaca; /* Light red */
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    .container {
+        margin: 15px;
+        padding: 15px;
+    }
+}
