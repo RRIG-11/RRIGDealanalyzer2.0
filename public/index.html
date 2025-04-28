@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRIG Deal Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RRIG Deal Analyzer</h1>
+
+        <div class="form-section">
+            <input type="text" id="addressInput" placeholder="Enter property address..." required>
+            
+            <select id="rehabLevel">
+                <option value="">Select Rehab Level</option>
+                <option value="light">Light Rehab</option>
+                <option value="heavy">Heavy Rehab</option>
+                <option value="full">Full Rehab</option>
+            </select>
+
+            <select id="wholesaleProfit">
+                <option value="">Select Wholesale Profit</option>
+                <option value="10000">$10,000</option>
+                <option value="15000">$15,000</option>
+                <option value="25000">$25,000</option>
+                <option value="auto">Auto Calculate</option>
+            </select>
+
+            <button onclick="analyzeDeal()">Analyze Deal</button>
+            <button id="viewCompsBtn" onclick="viewRealComps()" disabled>View Real Comps 🔎</button>
+        </div>
+
+        <div id="dealResult" class="deal-card"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
